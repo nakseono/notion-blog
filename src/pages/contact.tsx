@@ -36,7 +36,7 @@ export default () => (
   <>
     <Header titlePre="Contact" />
     <div className={sharedStyles.layout}>
-      <div className={contactStyles.avatar}>
+      {/* <div className={contactStyles.avatar}>
         <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
       </div>
 
@@ -55,7 +55,7 @@ export default () => (
             </ExtLink>
           )
         })}
-      </div>
+      </div> */}
     </div>
   </>
 )

@@ -15,9 +15,9 @@ export default () => (
         width="250"
         alt="Vercel + Notion"
       />
-      <h1>My Notion Blog</h1>
+      <h1>Notion Blog</h1>
       <h2>
-        Blazing Fast Notion Blog with Next.js'{' '}
+        {/* Blazing Fast Notion Blog with Next.js'{' '} */}
         <ExtLink
           href="https://github.com/vercel/next.js/issues/9524"
           className="dotted"

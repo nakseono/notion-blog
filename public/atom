@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>My Blog</title>
+    <subtitle>Blog</subtitle>
+    <link href="/atom" rel="self" type="application/rss+xml"/>
+    <link href="/" />
+    <updated>2021-01-13T08:32:41.597Z</updated>
+    <id>My Notion Blog</id>
+    <entry>
+      <id>/blog/2021.01.13</id>
+      <title>노션으로 블로그 만들기 #1</title>
+      <link href="/blog/2021.01.13"/>
+      <updated>2021-01-12T15:00:00.148Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/2021.01.13">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>선호 김</name></author>
+    </entry>
+  </feed>
