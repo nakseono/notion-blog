@@ -151,12 +151,9 @@ const RenderPost = ({ post, redirect, preview }) => {
         </div>
       )}
       <div className={blogStyles.post}>
-        <h1>{post.Page || ''}</h1>
-        {post.Authors.length > 0 && (
-          <div className="authors">By: {post.Authors.join(' ')}</div>
-        )}
+        <h1 className="text-4xl">{post.Page || ''}</h1>
         {post.Date && (
-          <div className="posted">Posted: {getDateStr(post.Date)}</div>
+          <div className="posted">작성 날짜 : {getDateStr(post.Date)}</div>
         )}
 
         <hr />
