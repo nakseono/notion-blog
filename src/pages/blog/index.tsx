@@ -63,14 +63,14 @@ export default ({ posts = [], preview }) => {
         </div>
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
-        <div className="text-4xl text-center pb-10">Posted Contents</div>
+        <h1>My Notion Blog</h1>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
         {posts.map(post => {
           return (
             <div className={blogStyles.postPreview} key={post.Slug}>
-              <h3 className="text-2xl font-bold">
+              <h3>
                 <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
                   <div className={blogStyles.titleContainer}>
                     {!post.Published && (
@@ -80,12 +80,13 @@ export default ({ posts = [], preview }) => {
                   </div>
                 </Link>
               </h3>
-              {post.Date && (
-                <div className="posted text-base">
-                  작성 날짜: {getDateStr(post.Date)}
-                </div>
+              {post.Authors.length > 0 && (
+                <div className="authors">By: {post.Authors.join(' ')}</div>
               )}
-              <p className="mb-5">
+              {post.Date && (
+                <div className="posted">Posted: {getDateStr(post.Date)}</div>
+              )}
+              <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
                 {(post.preview || []).map((block, idx) =>
