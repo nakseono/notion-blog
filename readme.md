@@ -2,4 +2,4 @@
 
 from https://notion-blog.now.sh/
 
-using React, TailwindCSS
+using React, TailwindCSS ..
