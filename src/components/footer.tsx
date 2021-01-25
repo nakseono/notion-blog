@@ -1,23 +1,31 @@
-import ExtLink from './ext-link'
+import ExtLink from '../components/ext-link'
+
+import GitHub from '../components/svgs/github'
+import Email from '../components/svgs/envelope'
 
 export default () => (
   <>
     <footer>
-      <span>Deploy your own!</span>
-      <ExtLink href="https://vercel.com/import/git?s=https://github.com/ijjk/notion-blog/tree/master&env=NOTION_TOKEN,BLOG_INDEX_ID&envDescription=Required+env+values+for+deploying&envLink=https://github.com/ijjk/notion-blog%23getting-blog-index-and-token">
-        <img
-          src="https://vercel.com/button"
-          height={46}
-          width={132}
-          alt="deploy to Vercel button"
-        />
-      </ExtLink>
-      <span>
-        or{' '}
-        <ExtLink href="https://github.com/ijjk/notion-blog">
-          view source
-        </ExtLink>
-      </span>
+      <div className="flex justify-between">
+        <div className="pl-7">NakSeoNo © 2021</div>
+        <div className="pr-7 flex justify-between">
+          <ExtLink
+            className="mr-5"
+            key={'https://github.com/nakseono'}
+            href={'https://github.com/nakseono'}
+            aria-label={'github icon'}
+          >
+            <GitHub height={25} />
+          </ExtLink>
+          <ExtLink
+            key={'mailto:nakseono@gmail.com'}
+            href={'mailto:nakseono@gmail.com'}
+            aria-label={'email icon'}
+          >
+            <Email height={25} />
+          </ExtLink>
+        </div>
+      </div>
     </footer>
   </>
 )
