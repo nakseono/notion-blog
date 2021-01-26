@@ -31,3 +31,7 @@
     padding: 0.5em 0 2em;
   }
 }
+
+.header a:hover {
+  color: #a840ff;
+}
