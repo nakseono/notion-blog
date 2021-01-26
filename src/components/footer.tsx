@@ -6,7 +6,7 @@ import Email from '../components/svgs/envelope'
 export default () => (
   <>
     <footer>
-      <div className="flex justify-between">
+      <div className="flex justify-between italic text-xs">
         <div className="pl-7">NakSeoNo © 2021</div>
         <div className="pr-7 flex justify-between">
           <ExtLink

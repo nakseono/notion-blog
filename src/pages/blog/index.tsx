@@ -63,14 +63,14 @@ export default ({ posts = [], preview }) => {
         </div>
       )}
       <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
-        <h1>My Notion Blog</h1>
+        <div className="text-center">My Notion Blog</div>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>작성된 글이 없습니다.</p>
         )}
         {posts.map(post => {
           return (
             <div className={blogStyles.postPreview} key={post.Slug}>
-              <h3 className="text-3xl">
+              <h3 className="text-2xl">
                 <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
                   <div className={blogStyles.titleContainer}>
                     {!post.Published && (
