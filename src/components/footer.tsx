@@ -1,12 +1,11 @@
 import ExtLink from '../components/ext-link'
-
 import GitHub from '../components/svgs/github'
 import Email from '../components/svgs/envelope'
 
 export default () => (
   <>
     <footer>
-      <div className="flex justify-between italic text-xs">
+      <div className="flex flex-row justify-between italic text-xs">
         <div className="pl-7">NakSeoNo © 2021</div>
         <div className="pr-7 flex justify-between">
           <ExtLink
