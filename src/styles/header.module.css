@@ -35,3 +35,24 @@
 .header a:hover {
   color: #a840ff;
 }
+
+.header a {
+  position: relative;
+  padding: 6px 12px;
+}
+
+.header a:hover::after {
+  width: 80%;
+}
+
+.header a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-out;
+  width: 0%;
+  height: 4px;
+  background-color: #a840ff;
+}
