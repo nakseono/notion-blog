@@ -16,7 +16,7 @@ export default ({ titlePre = '' }) => {
 
   return (
     <div className="bg-gray-200">
-      <header>
+      <header className="w-8/12 m-auto">
         <Head>
           <title>{titlePre ? `${titlePre} |` : ''} NakSeo's Tech Blog</title>
         </Head>

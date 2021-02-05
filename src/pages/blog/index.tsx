@@ -69,11 +69,11 @@ export default ({ posts = [], preview }) => {
       {posts.map(post => {
         return (
           <div
-            className="w-8/12 h-24 m-auto bg-gray rounded-lg shadow-md mb-4 flex flex-grow flex-wrap content-around"
+            className="w-8/12 h-24 m-auto bg-gray rounded-lg shadow-md mb-4 flex flex-col justify-around"
             key={post.Slug}
           >
             <div>
-              <h3 className="text-2xl ">
+              <h3 className="text-2xl pl-4">
                 <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
                   <div className={blogStyles.titleContainer}>
                     {!post.Published && (
@@ -87,7 +87,7 @@ export default ({ posts = [], preview }) => {
             {/* {post.Authors.length > 0 && (
                 <div className="authors">By: {post.Authors.join(' ')}</div>
               )} */}
-            <div>
+            <div className="pl-4">
               {post.Date && (
                 <div className="posted">
                   작성 날짜 : {getDateStr(post.Date)}
