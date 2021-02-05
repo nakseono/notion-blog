@@ -62,15 +62,18 @@ export default ({ posts = [], preview }) => {
           </div>
         </div>
       )}
-      <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
-        <div className="text-center">My Notion Blog</div>
-        {posts.length === 0 && (
-          <p className={blogStyles.noPosts}>작성된 글이 없습니다.</p>
-        )}
-        {posts.map(post => {
-          return (
-            <div className={blogStyles.postPreview} key={post.Slug}>
-              <h3 className="text-2xl">
+      <div className="text-center">My Notion Blog</div>
+      {posts.length === 0 && (
+        <p className={blogStyles.noPosts}>작성된 글이 없습니다.</p>
+      )}
+      {posts.map(post => {
+        return (
+          <div
+            className="w-8/12 h-24 m-auto bg-gray rounded-lg shadow-md mb-4 flex flex-col justify-around"
+            key={post.Slug}
+          >
+            <div>
+              <h3 className="text-2xl pl-4">
                 <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
                   <div className={blogStyles.titleContainer}>
                     {!post.Published && (
@@ -80,25 +83,27 @@ export default ({ posts = [], preview }) => {
                   </div>
                 </Link>
               </h3>
-              {/* {post.Authors.length > 0 && (
+            </div>
+            {/* {post.Authors.length > 0 && (
                 <div className="authors">By: {post.Authors.join(' ')}</div>
               )} */}
+            <div className="pl-4">
               {post.Date && (
                 <div className="posted">
                   작성 날짜 : {getDateStr(post.Date)}
                 </div>
               )}
-              <p>
-                {/* {(!post.preview || post.preview.length === 0) &&
-                  'No preview available'} */}
+            </div>
+            {/* <p>
+                {(!post.preview || post.preview.length === 0) &&
+                  'No preview available'}
                 {(post.preview || []).map((block, idx) =>
                   textBlock(block, true, `${post.Slug}${idx}`)
                 )}
-              </p>
-            </div>
-          )
-        })}
-      </div>
+                </p> */}
+          </div>
+        )
+      })}
     </>
   )
 }
