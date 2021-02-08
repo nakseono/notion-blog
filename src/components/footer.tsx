@@ -5,7 +5,7 @@ import Email from '../components/svgs/envelope'
 
 export default () => {
   return (
-    <footer className="w-8/12 h-10 m-auto text-xs flex flex-col justify-between align-center">
+    <footer className="sm:w-11/12 md:w-9/12 xl:w-8/12 h-10 m-auto text-xs flex flex-col justify-between align-center">
       <hr className="footer_hr" />
       <div className="italic flex flex-row justify-between">
         <div className="ml-3">NakSeoNo © 2021</div>
