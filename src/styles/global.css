@@ -51,8 +51,8 @@ h2 {
 .footer_hr {
   border: none;
   height: 1px;
-  border-style: solid;
-  color: #a840ff;
+  border-style: dashed;
+  color: #00adb5;
   /* width: 1000px; */
   /* margin: auto; */
   /* margin-bottom: 20px; */

@@ -5,16 +5,16 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     backgroundColor: {
-      dark1: '#4d4646',
-      dark2: '#5b5656',
-      gr: '#7fcd91',
-      bright1: '#f5eaea',
+      dark1: '#222831',
+      dark2: '#393e46',
+      point: '#00adb5',
+      bright1: '#eeeeee',
     },
     textColor: {
-      dark1: '#4d4646',
-      dark2: '#5b5656',
-      gr: '#7fcd91',
-      bright1: '#f5eaea',
+      dark1: '#222831',
+      dark2: '#393e46',
+      point: '#00adb5',
+      bright1: '#eeeeee',
     },
     colors: {
       gray: colors.trueGray,
