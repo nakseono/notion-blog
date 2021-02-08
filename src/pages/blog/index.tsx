@@ -62,48 +62,49 @@ export default ({ posts = [], preview }) => {
           </div>
         </div>
       )}
-      <div className="text-center">My Notion Blog</div>
-      {posts.length === 0 && (
-        <p className={blogStyles.noPosts}>작성된 글이 없습니다.</p>
-      )}
-      {posts.map(post => {
-        return (
-          <div
-            className="w-8/12 h-24 m-auto bg-gray rounded-lg shadow-md mb-4 flex flex-col justify-around"
-            key={post.Slug}
-          >
-            <div>
-              <h3 className="text-2xl pl-4">
-                <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
-                  <div className={blogStyles.titleContainer}>
-                    {!post.Published && (
-                      <span className={blogStyles.draftBadge}>Draft</span>
-                    )}
-                    <a>{post.Page}</a>
-                  </div>
-                </Link>
-              </h3>
-            </div>
-            {/* {post.Authors.length > 0 && (
+      <div className="bg-dark2 pt-6 pb-2">
+        {posts.length === 0 && (
+          <p className={blogStyles.noPosts}>작성된 글이 없습니다.</p>
+        )}
+        {posts.map(post => {
+          return (
+            <div
+              className="sm:w-11/12 md:w-9/12 xl:w-8/12 h-24 m-auto bg-dark1 rounded-lg shadow-lg mb-4 flex flex-col justify-around"
+              key={post.Slug}
+            >
+              <div>
+                <h3 className="text-2xl pl-4">
+                  <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
+                    <div className={blogStyles.titleContainer}>
+                      {!post.Published && (
+                        <span className={blogStyles.draftBadge}>Draft</span>
+                      )}
+                      <a>{post.Page}</a>
+                    </div>
+                  </Link>
+                </h3>
+              </div>
+              {/* {post.Authors.length > 0 && (
                 <div className="authors">By: {post.Authors.join(' ')}</div>
               )} */}
-            <div className="pl-4">
-              {post.Date && (
-                <div className="posted">
-                  작성 날짜 : {getDateStr(post.Date)}
-                </div>
-              )}
-            </div>
-            {/* <p>
+              <div className="pl-4">
+                {post.Date && (
+                  <div className="posted">
+                    작성 날짜 : {getDateStr(post.Date)}
+                  </div>
+                )}
+              </div>
+              {/* <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
                 {(post.preview || []).map((block, idx) =>
                   textBlock(block, true, `${post.Slug}${idx}`)
                 )}
                 </p> */}
-          </div>
-        )
-      })}
+            </div>
+          )
+        })}
+      </div>
     </>
   )
 }

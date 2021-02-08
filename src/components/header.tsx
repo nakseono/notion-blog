@@ -15,8 +15,8 @@ export default ({ titlePre = '' }) => {
   const { pathname } = useRouter()
 
   return (
-    <div className="bg-gray-200">
-      <header className="w-8/12 m-auto">
+    <div className="bg-dark1">
+      <header className="sm:w-11/12 md:w-9/12 xl:w-8/12 m-auto">
         <Head>
           <title>{titlePre ? `${titlePre} |` : ''} NakSeo's Tech Blog</title>
         </Head>
