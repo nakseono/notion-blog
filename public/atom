@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>My Blog</title>
+    <subtitle>Blog</subtitle>
+    <link href="/atom" rel="self" type="application/rss+xml"/>
+    <link href="/" />
+    <updated>2021-02-15T07:17:34.636Z</updated>
+    <id>My Notion Blog</id>
+    <entry>
+      <id>/blog/Spread_Operator</id>
+      <title>[JS] 조금 더 유연한 코드 작성을 위해. Spread Operator</title>
+      <link href="/blog/Spread_Operator"/>
+      <updated>2021-02-05T15:00:00.309Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/Spread_Operator">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>선호 김</name></author>
+    </entry>
+    <entry>
+      <id>/blog/array_deduplication</id>
+      <title>[JS] 배열의 중복 제거 방법 2가지</title>
+      <link href="/blog/array_deduplication"/>
+      <updated>2021-02-04T15:00:00.309Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>1. Set
+2. indexOf(), filter()</p>
+          <p class="more">
+            <a href="/blog/array_deduplication">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>선호 김</name></author>
+    </entry>
+    <entry>
+      <id>/blog/algorithm_method</id>
+      <title>알고리즘 유용한 메서드</title>
+      <link href="/blog/algorithm_method"/>
+      <updated>2021-01-27T15:00:00.311Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>1. <code>isNaN()</code></p><p>어떤 값이 Not a Number인지 판별한다.</p><p>숫자면 false 아니면 true</p><p>ES6에서는 <code>Number.isNaN()</code> 을 사용한다고 한다. (차이점 구분 필요)</p>
+          <p class="more">
+            <a href="/blog/algorithm_method">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>선호 김</name></author>
+    </entry>
+    <entry>
+      <id>/blog/notion-blog2</id>
+      <title>노션으로 블로그 만들기 #2</title>
+      <link href="/blog/notion-blog2"/>
+      <updated>2021-01-18T15:00:00.311Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/notion-blog2">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>선호 김</name></author>
+    </entry>
+    <entry>
+      <id>/blog/notion-blog1</id>
+      <title>노션으로 블로그 만들기 #1</title>
+      <link href="/blog/notion-blog1"/>
+      <updated>2021-01-17T15:00:00.311Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/notion-blog1">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>선호 김</name></author>
+    </entry>
+  </feed>
