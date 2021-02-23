@@ -61,3 +61,7 @@ h2 {
 .writeArea {
   line-height: 2;
 }
+
+#callout {
+  border-color: #00adb5;
+}

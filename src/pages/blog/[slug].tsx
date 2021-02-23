@@ -382,13 +382,17 @@ const RenderPost = ({ post, redirect, preview }) => {
             }
             case 'callout': {
               toRender.push(
-                <div className="callout" key={id}>
+                <div
+                  id="callout"
+                  className="mt-4 mb-4 pt-2 pb-2 border-4 rounded-lg"
+                  key={id}
+                >
                   {value.format?.page_icon && (
-                    <div>{value.format?.page_icon}</div>
+                    <span className="pl-2">{value.format?.page_icon}</span>
                   )}
-                  <div className="text">
+                  <span className="text pl-3">
                     {textBlock(properties.title, true, id)}
-                  </div>
+                  </span>
                 </div>
               )
               break
