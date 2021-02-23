@@ -150,7 +150,7 @@ const RenderPost = ({ post, redirect, preview }) => {
           </div>
         </div>
       )}
-      <div className={blogStyles.post}>
+      <div className="sm:w-11/12 md:w-9/12 xl:w-8/12 m-auto writeArea">
         <h1>{post.Page || ''}</h1>
         {/* {post.Authors.length > 0 && (
           <div className="authors">By: {post.Authors.join(' ')}</div>

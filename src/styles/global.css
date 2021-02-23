@@ -57,3 +57,7 @@ h2 {
   /* margin: auto; */
   /* margin-bottom: 20px; */
 }
+
+.writeArea {
+  line-height: 2;
+}
