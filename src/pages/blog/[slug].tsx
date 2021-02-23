@@ -156,10 +156,10 @@ const RenderPost = ({ post, redirect, preview }) => {
           <div className="authors">By: {post.Authors.join(' ')}</div>
         )} */}
         {post.Date && (
-          <div className="posted">작성 날짜 : {getDateStr(post.Date)}</div>
+          <div className="posted pb-5">작성 날짜 : {getDateStr(post.Date)}</div>
         )}
 
-        <hr />
+        <hr className="pb-5" />
 
         {(!post.content || post.content.length === 0) && (
           <p>This post has no content</p>
@@ -314,20 +314,9 @@ const RenderPost = ({ post, redirect, preview }) => {
               }
 
               toRender.push(
-                useWrapper ? (
-                  <div
-                    style={{
-                      paddingTop: `${Math.round(block_aspect_ratio * 100)}%`,
-                      position: 'relative',
-                    }}
-                    className="asset-wrapper"
-                    key={id}
-                  >
-                    {child}
-                  </div>
-                ) : (
-                  child
-                )
+                <div className="relative" key={id}>
+                  {child}
+                </div>
               )
               break
             }
@@ -360,9 +349,12 @@ const RenderPost = ({ post, redirect, preview }) => {
                   )
                 } else {
                   toRender.push(
-                    <components.Code key={id} language={language || ''}>
-                      {content}
-                    </components.Code>
+                    // 여기가 코드가 보여지는 부분.
+                    <div className="pt-4 pb-4">
+                      <components.Code key={id} language={language || ''}>
+                        {content}
+                      </components.Code>
+                    </div>
                   )
                 }
               }
