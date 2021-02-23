@@ -247,6 +247,8 @@ const RenderPost = ({ post, redirect, preview }) => {
                 display_source,
                 block_aspect_ratio,
               } = format
+              const { caption } = properties
+              console.log(`this is caption TEST ${caption}`)
               const baseBlockWidth = 768
               const roundFactor = Math.pow(10, 2)
               // calculate percentages
@@ -261,18 +263,19 @@ const RenderPost = ({ post, redirect, preview }) => {
               const useWrapper = block_aspect_ratio && !block_height
               const childStyle: CSSProperties = useWrapper
                 ? {
-                    width: '100%',
-                    height: '100%',
+                    // width: '100%',
+                    // height: '100%',
                     border: 'none',
-                    position: 'absolute',
+                    // position: 'absolute',
                     top: 0,
                   }
                 : {
-                    width,
+                    // width,
                     border: 'none',
-                    height: block_height,
-                    display: 'block',
-                    maxWidth: '100%',
+                    // height: block_height,
+                    // display: 'block',
+                    // maxWidth: '100%',
+                    top: 0,
                   }
 
               let child = null
@@ -290,18 +293,23 @@ const RenderPost = ({ post, redirect, preview }) => {
               } else {
                 // notion resource
                 child = (
-                  <Comp
-                    key={!useWrapper ? id : undefined}
-                    src={`/api/asset?assetUrl=${encodeURIComponent(
-                      display_source as any
-                    )}&blockId=${id}`}
-                    controls={!isImage}
-                    alt={`An ${isImage ? 'image' : 'video'} from Notion`}
-                    loop={!isImage}
-                    muted={!isImage}
-                    autoPlay={!isImage}
-                    style={childStyle}
-                  />
+                  <div className="flex flex-col pt-4 pb-4">
+                    <div className="m-auto">
+                      <Comp
+                        key={!useWrapper ? id : undefined}
+                        src={`/api/asset?assetUrl=${encodeURIComponent(
+                          display_source as any
+                        )}&blockId=${id}`}
+                        controls={!isImage}
+                        alt={`An ${isImage ? 'image' : 'video'} from Notion`}
+                        loop={!isImage}
+                        muted={!isImage}
+                        autoPlay={!isImage}
+                        style={childStyle}
+                      />
+                    </div>
+                    <div className="m-auto text-sm text-point">{caption}</div>
+                  </div>
                 )
               }
 
