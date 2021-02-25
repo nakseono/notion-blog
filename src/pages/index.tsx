@@ -5,9 +5,11 @@ import sharedStyles from '../styles/shared.module.css'
 export default () => (
   <>
     <Header />
-    <div className={sharedStyles.layout}>
-      <h1>My Notion Blog</h1>
-      <h2>Blazing Fast Notion Blog with Next.js' </h2>
+    <div className="sm:w-11/12 md:w-9/12 xl:w-8/12 m-auto">
+      <div className="text-7xl font-extralight">
+        안녕하세요. <br />
+        개발자 <strong>김선호</strong>입니다.
+      </div>
     </div>
   </>
 )

@@ -16,7 +16,7 @@ export default ({ titlePre = '', category = '' }) => {
       {/* <div className="float-left">This is Avator Space</div> */}
       <header className="h-16 sm:w-11/12 md:w-9/12 xl:w-8/12 m-auto flex justify-center items-center">
         <Head>
-          <title>{titlePre ? `${titlePre} |` : ''} NakSeo's Tech Blog</title>
+          <title>{titlePre ? `${titlePre} |` : ''} NakSeo's Devlog</title>
         </Head>
         <div className="left-1/2 flex flex-row justify-center">
           {navItems.map(({ label, page }) => {
