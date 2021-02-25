@@ -66,3 +66,14 @@ h2 {
 #callout {
   border-color: #00adb5;
 }
+
+#gradtext {
+  background: #f65878;
+  background: -webkit-linear-gradient(left, #f65878, #f47f41);
+  background: -moz-linear-gradient(right, #f65878, #f47f41);
+  background: -o-linear-gradient(right, #f65878, #f47f41);
+  background: linear-gradient(to right, #f65878, #f47f41);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
