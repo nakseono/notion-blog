@@ -2,4 +2,6 @@
 
 from https://notion-blog.now.sh/
 
-SCSS 적용 공부중..
+using next.js & React
+
+SCSS 적용 예정
