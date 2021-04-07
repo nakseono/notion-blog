@@ -4,4 +4,4 @@ from https://notion-blog.now.sh/
 
 using next.js & React
 
-tailwindcss 걷어내고 SCSS 적용 예정..
+tailwindcss 걷어내고 SCSS  적용 예정..
